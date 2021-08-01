@@ -10357,24 +10357,24 @@ if (false) {} else {
 /***/ }),
 
 /***/ "react-dom/server":
-/*!************************************************************************************************************!*\
-  !*** external "C:\\Users\\Christophe\\OneDrive\\Bureau\\Cecylia\\Web\\node_modules\\react-dom\\server.js" ***!
-  \************************************************************************************************************/
+/*!***************************************************************************************************************!*\
+  !*** external "C:\\Users\\Christophe\\OneDrive\\Bureau\\Cecylia\\gatsby\\node_modules\\react-dom\\server.js" ***!
+  \***************************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("C:\\Users\\Christophe\\OneDrive\\Bureau\\Cecylia\\Web\\node_modules\\react-dom\\server.js");
+module.exports = require("C:\\Users\\Christophe\\OneDrive\\Bureau\\Cecylia\\gatsby\\node_modules\\react-dom\\server.js");
 
 /***/ }),
 
 /***/ "react":
-/*!*******************************************************************************************************!*\
-  !*** external "C:\\Users\\Christophe\\OneDrive\\Bureau\\Cecylia\\Web\\node_modules\\react\\index.js" ***!
-  \*******************************************************************************************************/
+/*!**********************************************************************************************************!*\
+  !*** external "C:\\Users\\Christophe\\OneDrive\\Bureau\\Cecylia\\gatsby\\node_modules\\react\\index.js" ***!
+  \**********************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("C:\\Users\\Christophe\\OneDrive\\Bureau\\Cecylia\\Web\\node_modules\\react\\index.js");
+module.exports = require("C:\\Users\\Christophe\\OneDrive\\Bureau\\Cecylia\\gatsby\\node_modules\\react\\index.js");
 
 /***/ }),
 
