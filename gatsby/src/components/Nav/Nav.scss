@@ -160,7 +160,7 @@
     min-height: 100vh;
     background: url("../../assets/img/img-0.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     transition: opacity 500ms ease;
   }

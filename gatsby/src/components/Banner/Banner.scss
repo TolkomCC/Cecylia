@@ -2,7 +2,6 @@
   width: 100%;
   min-height: 100vh;
   background-color: #ffe684;
-  position: absolute;
   .logo {
     position: absolute;
     top: 300px;
@@ -22,25 +21,21 @@
     width: auto;
     position: absolute;
     bottom: 0px;
-    padding-bottom: 100px;
     padding-left: 50px;
+    padding-bottom: 100px;
     h1 {
       opacity: 0;
       font-size: 150px;
       font-weight: 600;
-      -webkit-animation: visible-on 0.8s ease-in;
-      -moz-animation: visible-on 0.8s ease-in;
       animation: visible-on 0.8s ease-in;
       animation-fill-mode: forwards;
     }
     h2 {
       opacity: 0;
-      -webkit-animation: visible-on 0.8s ease-in;
-      -moz-animation: visible-on 0.8s ease-in;
+      font-size: 170px;
       animation: visible-on 0.8s ease-in;
       animation-delay: 0.5s;
       animation-fill-mode: forwards;
-      font-size: 170px;
     }
   }
 }
@@ -167,28 +162,6 @@
         font-size: 35px;
       }
     }
-  }
-}
-
-@-webkit-keyframes visible-on {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-@-moz-keyframes visible-on {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
   }
 }
 
