@@ -1,12 +1,12 @@
 import * as React from "react"
 import Layout from "../components/Layout/Layout"
 
-const IndexPage = () => {
+const Instagram = () => {
   return (
     <Layout>
-      <h1>Home page</h1>
+      <h1>Instagram</h1>
     </Layout>
   )
 }
 
-export default IndexPage
+export default Instagram
