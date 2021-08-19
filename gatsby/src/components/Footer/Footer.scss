@@ -1,4 +1,45 @@
 .footer {
-    height: 200px;
-    background-color: #ffe684;
+
+    .page-resume {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-content {
+        height: 200px;
+        background-color: white;
+        border-top: 4px solid #0000;
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 20px;
+
+
+        .link-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footer {
+        .footer-content {
+            .link-container{
+                flex-direction: column;
+                justify-content: center;
+            }
+           
+        }
+
+    }
+}
+
+.list-menu {
+  width: 33%;
+  padding-bottom: 30px;
 }
