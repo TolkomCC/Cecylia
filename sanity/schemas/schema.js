@@ -12,17 +12,16 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     {
-      name: 'post',
+      title: 'Fast Facts',
+      name: 'fastFact',
       type: 'document',
-      title: 'Post',
       fields : [
         {
-          name: 'title',
+          name: 'Fact',
+          title: 'fact',
           type: 'string',
-          title: 'title'
         }
       ]
     }
-
   ]),
 })
