@@ -3,21 +3,23 @@
 .banner-container {
   width: 100%;
   min-height: 100vh;
-  background-color: $yellow-color;
+  background-color: $white-color;
+  p {
+    font-size: 40px;
+    top: 25%;
+    position: absolute;
+    right: 20%;
+    transform: rotate(90deg);
+    color: $blue-color;
+  }
   .logo {
     position: absolute;
-    top: 150px;
-    right: 150px;
+    top: 15%;
+    right: 5%;
     width: 300px;
     height: 300px;
-    background-color: #ffff;
+    background-color: $white-color;
     border-radius: 50%;
-    p {
-      font-size: 40px;
-      position: absolute;
-      left: -80px;
-      transform: rotate(90deg);
-    }
   }
   .title {
     width: auto;
@@ -28,6 +30,7 @@
     h1 {
       font-size: 150px;
       font-weight: 600;
+      color: $yellow-color;
     }
     h2 {
       font-size: 170px;
@@ -57,11 +60,6 @@
         font-size: 30px;
       }
     }
-
-    .logo {
-      top: 200px;
-      right: 150px;
-    }
     .title {
       h1 {
         font-size: 90px;
@@ -74,12 +72,34 @@
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .list {
+    .links {
+      padding: 10px;
+      a {
+        font-size: 90px;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
+  .list {
+    .featured-inner-left {
+      display: none;
+    }
+    .links {
+      width: 100%;
+      padding: 15px;
+      .ode {
+        top: 30px;
+        left: -120px;
+      }
+    }
+  }
   .banner-container {
     .logo {
       position: absolute;
-      top: 300px;
-      right: 150px;
       width: 200px;
       height: 200px;
       background-color: #ffff;
@@ -105,24 +125,63 @@
   }
 }
 
+@media only screen and (max-width: 540px) {
+  .list {
+    .logo-container {
+      width: 150px;
+      top: 115px;
+    }
+    .links {
+      padding: 10px;
+      a {
+        font-size: 60px;
+      }
+      .mail {
+        margin-top: 35px;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 480px) {
+  .list {
+    .logo-container {
+      width: 110px;
+      top: 115px;
+      right: 85px;
+    }
+    .links {
+      padding: 0 0 0 10px;
+      .ode {
+        top: 0;
+        font-size: 30px;
+      }
+      a {
+        font-size: 40px;
+        line-height: 1.8;
+      }
+      .mail {
+        margin-top: 0;
+        font-size: 25px;
+      }
+    }
+  }
   .banner-container {
     .links-bar {
       display: none;
     }
+    p {
+      font-size: 25px;
+      top: 15%;
+      right: 35%;
+    }
     .logo {
-      top: 200px;
-      right: 35px;
       width: 170px;
       height: 170px;
-      p {
-        font-size: 25px;
-        left: -60px;
-      }
     }
     .title {
       padding-bottom: 100px;
-      padding-left: 50px;
+      padding-left: 25px;
       h1 {
         font-size: 35px;
         font-weight: 600;
@@ -136,15 +195,15 @@
 
 @media only screen and (max-width: 320px) {
   .banner-container {
+    p {
+      font-size: 20px;
+      top: 15%;
+      left: -5%;
+      right: auto;
+    }
     .logo {
-      top: 200px;
-      right: 35px;
       width: 170px;
       height: 170px;
-      p {
-        font-size: 25px;
-        left: -60px;
-      }
     }
     .title {
       padding-bottom: 50px;
@@ -155,6 +214,23 @@
       }
       h2 {
         font-size: 35px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 281px) {
+  .list {
+    .logo-container {
+      width: 115px;
+    }
+    .links {
+      .ode {
+        left: -95px;
+      }
+      .mail {
+        margin-top: 50px;
+        font-size: 15px;
       }
     }
   }
