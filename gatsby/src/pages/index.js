@@ -3,7 +3,7 @@ import Layout from '../components/Layout/Layout';
 
 const IndexPage = () => {
   return (
-    <Layout myPage='Accueil'>
+    <Layout myPage='Séries'>
       <h1>Home page</h1>
       
     </Layout>

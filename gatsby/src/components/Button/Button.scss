@@ -1,0 +1,10 @@
+@import "../../styles/Variables.scss";
+
+.link-mail{
+    background-color: $white-color;
+    border: black 1px solid;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: 600;
+    cursor:pointer;
+}

@@ -1,43 +1,49 @@
 import React from "react";
-import "./Footer.scss";
-import {Link} from "gatsby";
+import { Link } from "gatsby";
+import Logo from "../../assets/img/Logo.png";
 
-const Footer = ({pageActive}) => {
+import Button from "../Button/Button";
+
+import "./Footer.scss";
+
+const Footer = ({ pageActive }) => {
   return (
     <div className="footer">
-        <div className="page-resume">
-        <h1>Toutes <br/> Les {pageActive}</h1>
+      <div className="page-resume">
+        <div className="logo-container">
+          <img src={Logo} />
         </div>
+        <h1>
+          Toutes <br /> Les {pageActive}
+        </h1>
+      </div>
 
-        {/* </Contact> */}
+      <div className="contact">
+        <span> Pour échanger :</span>
+        <Button mail="cyl_illustrations@gmail.com" />
+      </div>
 
-        {/*Les 3 colonnes avec liens*/}
-        <div className="footer-content">
-            <div className="link-container">
-              {/* Column1 */}
-              <div  className="col">
-                <ul className="list-menu">
-                    <Link to='/series'>Séries illustrations</Link>
-                
-                </ul> 
-              </div>
+      {/*Les 3 colonnes avec liens*/}
+      <div className="links">
+        <div className="links-container">
+          {/* Column1 */}
+          <div className="col">
+            <Link to="/series">Séries</Link>
+            <Link to="/illustrations"> Illustrations</Link>
+          </div>
 
-              {/* Column2 */}
-              <div  className="col">
-                  <ul className="list-menu">
-                      <Link to='/illustrations'>Ôde à la création</Link>
-                  </ul> 
-                </div>
+          {/* Column2 */}
+          <div className="col">
+            <Link to="/illustrations">Ôde à la création</Link>
+          </div>
 
-              {/* Column3 */}
-               <div  className="col">
-                <ul className="list-menu">
-                    <Link to='/mentions'>Mentions légales</Link>
-                </ul> 
-              </div>
-            </div>
+          {/* Column3 */}
+          <div className="col">
+            <Link to="/mentions">Mentions légales</Link>
           </div>
         </div>
+      </div>
+    </div>
   );
 };
 
