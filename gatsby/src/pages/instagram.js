@@ -3,7 +3,7 @@ import Layout from "../components/Layout/Layout"
 
 const Instagram = () => {
   return (
-    <Layout>
+    <Layout myPage='Instagram'>
       <h1>Instagram</h1>
     </Layout>
   )

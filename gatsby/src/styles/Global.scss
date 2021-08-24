@@ -1,3 +1,14 @@
 * {
-    margin: 0;
+  margin: 0;
+}
+
+@font-face {
+  // Defining what the font will be called
+  font-family: BigCarlson;
+  // Linking to the font file
+  src: url("../assets/Fonts/Big-Caslon-Medium.ttf");
+}
+
+body {
+  font-family: BigCarslon;
 }

@@ -1,11 +1,7 @@
 export const MenuItems = [
   {
-    title: "Accueil",
-    url: "/",
-  },
-  {
     title: "Séries",
-    url: "/series",
+    url: "/",
   },
   {
     title: "Illustrations",

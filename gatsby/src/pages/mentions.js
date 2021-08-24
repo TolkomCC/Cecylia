@@ -3,7 +3,7 @@ import Layout from "../components/Layout/Layout"
 
 const Mentions = () => {
   return (
-    <Layout>
+    <Layout myPage='Mentions légales'>
       <h1>Mentions</h1>
     </Layout>
   )
