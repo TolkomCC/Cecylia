@@ -253,6 +253,10 @@
     }
     .links {
       width: 100%;
+      top: 150px;
+      .ode {
+        top: -10px;
+      }
     }
   }
   .active {

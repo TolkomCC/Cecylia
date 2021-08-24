@@ -4,50 +4,43 @@
   width: 100%;
   min-height: 100vh;
   background-color: $white-color;
-  p {
-    font-size: 40px;
-    top: 25%;
+  .ode-logo {
     position: absolute;
-    right: 20%;
-    transform: rotate(90deg);
-    color: $blue-color;
-  }
-  .logo {
-    position: absolute;
+    display: flex;
     top: 15%;
-    right: 5%;
-    width: 300px;
-    height: 300px;
-    background-color: $white-color;
-    border-radius: 50%;
+    right: 10%;
+    .ode-banner {
+      display: flex;
+      position: relative;
+      top: 140px;
+      p {
+        font-size: 40px;
+        font-weight: 700;
+        width: auto;
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        color: $blue-color;
+      }
+    }
+    .logo {
+      background-color: $white-color;
+      border-radius: 50%;
+    }
   }
   .title {
     width: auto;
     position: absolute;
     bottom: 0px;
     padding-left: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
     h1 {
-      font-size: 150px;
+      font-size: 7vw;
       font-weight: 600;
       color: $yellow-color;
     }
     h2 {
-      font-size: 170px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1600px) {
-  .banner-container {
-    .title {
-      h1 {
-        font-size: 100px;
-        font-weight: 600;
-      }
-      h2 {
-        font-size: 120px;
-      }
+      font-size: 9vw;
     }
   }
 }
@@ -58,15 +51,6 @@
       width: 60%;
       a {
         font-size: 30px;
-      }
-    }
-    .title {
-      h1 {
-        font-size: 90px;
-        font-weight: 600;
-      }
-      h2 {
-        font-size: 110px;
       }
     }
   }
@@ -91,35 +75,26 @@
     .links {
       width: 100%;
       padding: 15px;
-      .ode {
+      .ode-banner {
         top: 30px;
         left: -120px;
       }
     }
   }
+}
+
+@media only screen and (max-width: 600px) {
   .banner-container {
-    .logo {
-      position: absolute;
-      width: 200px;
-      height: 200px;
-      background-color: #ffff;
-      border-radius: 50%;
-      p {
-        font-size: 30px;
-        position: absolute;
-        left: -80px;
-        transform: rotate(90deg);
-      }
-    }
-    .title {
-      padding-bottom: 200px;
-      padding-left: 50px;
-      h1 {
-        font-size: 75px;
-        font-weight: 600;
-      }
-      h2 {
-        font-size: 85px;
+    .ode-logo {
+      .ode-banner {
+        p {
+          width: 335px;
+          position: absolute;
+          right: -50px;
+          bottom: 80px;
+          font-size: 30px;
+          font-weight: 700;
+        }
       }
     }
   }
@@ -144,6 +119,33 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .banner-container {
+    .ode-logo {
+      top: 20%;
+      .ode-banner {
+        top: 180px;
+        p {
+          right: -70px;
+        }
+      }
+      .logo {
+        width: 150px;
+        height: 150px;
+      }
+    }
+    .links-bar {
+      display: none;
+    }
+    .title {
+      padding: 0 0 20px 15px;
+      h1 {
+        font-size: 9vw;
+      }
+      h2 {
+        font-size: 10vw;
+      }
+    }
+  }
   .list {
     .logo-container {
       width: 110px;
@@ -152,7 +154,7 @@
     }
     .links {
       padding: 0 0 0 10px;
-      .ode {
+      .ode-banner {
         top: 0;
         font-size: 30px;
       }
@@ -166,57 +168,6 @@
       }
     }
   }
-  .banner-container {
-    .links-bar {
-      display: none;
-    }
-    p {
-      font-size: 25px;
-      top: 15%;
-      right: 35%;
-    }
-    .logo {
-      width: 170px;
-      height: 170px;
-    }
-    .title {
-      padding-bottom: 100px;
-      padding-left: 25px;
-      h1 {
-        font-size: 35px;
-        font-weight: 600;
-      }
-      h2 {
-        font-size: 40px;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .banner-container {
-    p {
-      font-size: 20px;
-      top: 15%;
-      left: -5%;
-      right: auto;
-    }
-    .logo {
-      width: 170px;
-      height: 170px;
-    }
-    .title {
-      padding-bottom: 50px;
-      padding-left: 50px;
-      h1 {
-        font-size: 30px;
-        font-weight: 600;
-      }
-      h2 {
-        font-size: 35px;
-      }
-    }
-  }
 }
 
 @media only screen and (max-width: 281px) {
@@ -225,7 +176,7 @@
       width: 115px;
     }
     .links {
-      .ode {
+      .ode-banner {
         left: -95px;
       }
       .mail {

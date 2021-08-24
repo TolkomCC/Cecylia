@@ -8,7 +8,7 @@ const Layout = ({ children, myPage}) => {
     <>
       <Nav />
       <Banner title="Né du changement,"/>
-      <div style={{height:"200px"}}>{children}</div>
+      <div style={{height:"auto"}}>{children}</div>
       <Footer pageActive={myPage}/>
     </>
   );

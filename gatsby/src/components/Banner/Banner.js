@@ -6,9 +6,13 @@ import "./Banner.scss";
 const Banner = ({ title }) => {
   return (
     <div className="banner-container">
-      <p>Ôde à la Création</p>
-      <div className="logo">
-        <StaticImage src="../../assets/img/Logo.png" alt="Logo" placeholder="blurred" layout="constrained" />
+      <div className="ode-logo">
+        <div className="ode-banner">
+          <p>Ôde à la Création</p>
+        </div>
+        <div className="logo">
+          <StaticImage src="../../assets/img/Logo.png" alt="Logo" placeholder="blurred" layout="constrained" />
+        </div>
       </div>
       <div className="title">
         <h1>{title}</h1>
