@@ -186,3 +186,60 @@
     }
   }
 }
+
+// Orientation Landscape
+@media only screen and (max-device-width: 1024px) and (orientation: landscape) {
+  .list {
+    .links {
+      padding: 50px;
+    }
+  }
+}
+
+@media only screen and (max-device-width: 900px) and (orientation: landscape) {
+  .banner-container {
+    .ode-logo {
+      right: 20%;
+      .ode-banner {
+        top: 65px;
+        margin-right: 20px;
+        p {
+          transform: rotate(0deg);
+        }
+      }
+      .logo {
+        width: 130px;
+        top: 25%;
+        right: 15%;
+      }
+    }
+  }
+  .list {
+    .featured-inner-left {
+      display: none;
+    }
+    .logo-container {
+      width: 100px;
+    }
+    .links {
+      width: 50%;
+      padding: 0px;
+      top: 0;
+      left: 0;
+      a {
+        font-size: 45px;
+      }
+      .ode {
+        margin-bottom: 25px;
+        position: relative;
+        left: 0;
+        top: 0;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      .mail {
+        margin-top: 30px;
+      }
+    }
+  }
+}
