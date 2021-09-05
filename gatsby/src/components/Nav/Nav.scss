@@ -24,7 +24,6 @@
   justify-content: center;
   z-index: 10;
   cursor: pointer;
-  border: 1px solid #000;
   border-radius: 50%;
 
   &:before {
@@ -51,6 +50,7 @@
     border-radius: 50%;
     transition: transform 500ms ease;
     z-index: 40;
+    border: 1px black solid;
   }
 
   &:hover {
@@ -172,15 +172,16 @@
   }
 
   .animated {
-    animation: fade-in 1.5s ease;
+    animation: fade-in 1s ease;
   }
+
   .logo-container {
     position: absolute;
     top: 55px;
     right: 125px;
   }
   .links {
-    top: 100px;
+    top: 120px;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -193,11 +194,12 @@
     .ode {
       position: absolute;
       left: -100px;
-      top: 130px;
+      top: 110px;
       transform: rotate(90deg);
       font-size: 38px;
       color: $blue-color;
     }
+
     a {
       width: 45%;
       text-decoration: none;
@@ -212,6 +214,7 @@
       opacity: 0;
       transform: translateY(40px);
       transition: transform 300ms ease, opacity 400ms ease;
+      margin: 10px 0 10px 0;
       &:hover {
         color: #000;
       }
