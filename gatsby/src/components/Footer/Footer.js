@@ -34,7 +34,7 @@ const Footer = ({ pageActive }) => {
 
           {/* Column2 */}
           <div className="col">
-            <Link to="/illustrations">Ôde à la création</Link>
+            <Link to="/ode">Ôde à la création</Link>
           </div>
 
           {/* Column3 */}
