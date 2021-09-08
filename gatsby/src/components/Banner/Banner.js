@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image";
 
 import "./Banner.scss";
@@ -8,7 +9,7 @@ const Banner = ({ title }) => {
     <div className="banner-container">
       <div className="ode-logo">
         <div className="ode-banner">
-          <p>Ôde à la Création</p>
+          <Link to="/ode">Ôde à la Création</Link>
         </div>
         <div className="logo">
           <StaticImage src="../../assets/img/Logo.png" alt="Logo" placeholder="blurred" layout="constrained" />

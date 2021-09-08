@@ -61,7 +61,7 @@ const Nav = () => {
           <StaticImage src="../../assets/img/Logo.png" alt="Logo" placeholder="blurred" layout="constrained" />
         </div>
         <div className="links">
-          <p className="ode">Ôde à la création</p>
+          <Link to="/ode" className="ode">Ôde à la création</Link>
           {MenuItems.map((item, index) => {
             return (
               <Link to={item.url} key={index} onMouseOver={handleHover} onMouseOut={handleOut} onFocus={handleHover}>

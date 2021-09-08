@@ -1,13 +1,11 @@
 import React from "react";
 import Nav from "../Nav/Nav";
-import Banner from "../Banner/Banner"
 import Footer from "../Footer/Footer"
 
 const Layout = ({ children, myPage}) => {
   return (
     <>
       <Nav />
-      <Banner title="Né du changement,"/>
       <div style={{height:"auto"}}>{children}</div>
       <Footer pageActive={myPage}/>
     </>
